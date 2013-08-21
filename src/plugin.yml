@@ -1,0 +1,56 @@
+name: UCsystem
+author: Gamerboy59
+version: 0.2
+main: com.Gamerboy59.bukkit.ucsystem.main
+description: Servermanager von United-Craft
+commands:
+  isbanned:
+    description: Testet ob der Spieler gebannt ist
+  ban:
+    description: Bannt einen Spieler
+  unban:
+    description: Entbannt einen Spieler
+  cc:
+    description: Leert den Chat
+    aliases: [chatclear]
+  stats:
+    description: Zeigt deine Kills/Tode
+  tc:
+    description: Team-Chat
+  logoutall:
+    description: Loggt alle Spieler aus
+  random:
+    description: Gluecks-Spiel/Zufall
+  pvp:
+    description: (De)/Aktiviert PvP
+  globalmute:
+    description: (De)/Aktiviert GlobalMute
+  support:
+    description: Support-Hilfe
+  tabname:
+    description: Tabname
+  giveall:
+    description: Giveall
+  kick:
+    description: Kick
+  essen:
+    description: Stillt den Hunger
+  warn:
+    description: Warnt jemanden
+  warns:
+    description: Statistik ueber Warns
+  slots:
+    description: Setzt die Slots
+  motd:
+    description: Setzt den Motd
+  friede:
+    description: Frieden
+    aliases: [frieden]
+  team:
+    description: Zeigt das Team
+  clan:
+    description: Clan
+    aliases: [c]
+  system:
+    description: DevInfos
+    aliases: [dev]
