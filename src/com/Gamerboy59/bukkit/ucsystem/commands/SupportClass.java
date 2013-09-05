@@ -44,7 +44,7 @@ public class SupportClass implements CommandExecutor {
 						}
 					}
 				} else {
-					sender.sendMessage("§6[Support]§a Du bekommst berreits Support!");
+					sender.sendMessage("§6[Support]§a Du bekommst bereits Support!");
 				}
 			} else if (args.length == 1) {
 				if (sender.hasPermission("crafted.team")) {

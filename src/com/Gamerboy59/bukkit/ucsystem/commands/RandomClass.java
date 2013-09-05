@@ -30,15 +30,15 @@ public class RandomClass implements CommandExecutor {
 			          int i = r.nextInt(ps.length);
 			          player = ps[i];
 			          if ((sender.hasPermission("crafted.random.ausgeschlossen")) && (!sender.isOp())) {
-			            Bukkit.broadcastMessage("§b[§6§b] §a" + player.getName() + "§a hätte gewonnen, ist aber ausgeschlossen.");
+			            Bukkit.broadcastMessage("§b[§6UCS§b] §a" + player.getName() + "§a hätte gewonnen, ist aber ausgeschlossen.");
 			            return false;
 			          }
 			        } catch (Exception e) {
 			          e.printStackTrace();
-			          sender.sendMessage("§b[§6CTS§b] §cEs ist ein Fehler aufgetreten.");
+			          sender.sendMessage("§b[§6UCS§b] §cEs ist ein Fehler aufgetreten.");
 			          return true;
 			        }
-			        Bukkit.broadcastMessage("§b[§6CTS§b] §6" + player.getName() + "§a hat die Verlosung gewonnen!");
+			        Bukkit.broadcastMessage("§b[§6UCS§b] §6" + player.getName() + "§a hat die Verlosung gewonnen!");
 			        return true;
 			      }
 			      sender.sendMessage("§cDu hast keinen Zugriff auf diesen Befehl!");

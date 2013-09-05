@@ -184,7 +184,7 @@ public class BanClass implements CommandExecutor, Listener {
 		String reason = this.getBanReason(p.getName());
 		if (reason != null) {
 			e.setResult(Result.KICK_BANNED);
-			e.setKickMessage("§6Du bist Permanent von§b§l Crafted§6 gebannt. Grund:§c " + reason);
+			e.setKickMessage("§6Du bist Permanent von§b§l Crafted§r§6 gebannt. Grund:§c " + reason);
 		}
 	}
 }

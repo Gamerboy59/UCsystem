@@ -36,18 +36,18 @@ public class EatClass implements CommandExecutor {
 						long lastusage = cooldowns.get(p.getName());
 						if (lastusage + 6000*1000 < time) {
 							 p.setFoodLevel(20);
-							p.sendMessage("§b[§6CTS§b] §aDein Hunger wurde gestillt!");
+							p.sendMessage("§b[§6UCS§b] §aDein Hunger wurde gestillt!");
 							cooldowns.put(p.getName(), time);
 						} else {
 							if ((((lastusage + 6000*1000 - time) / 1000) / 100) == 60) {
-								p.sendMessage("§6[CTS]§a Es verbleiben §61 §aStunde");	
+								p.sendMessage("§6[UCS]§a Es verbleiben §61 §aStunde");	
 							} else {
 							p.sendMessage("§6[CTS]§a Es verbleiben §6" + (((lastusage + 6000*1000 - time) / 1000) / 100) + " §aMinuten");
 							}
 						}
 					} else {
 						 p.setFoodLevel(20);
-						p.sendMessage("§b[§6CTS§b] §aDein Hunger wurde gestillt!");
+						p.sendMessage("§b[§6UCS§b] §aDein Hunger wurde gestillt!");
 						cooldowns.put(p.getName(), time);
 					}
 				} 

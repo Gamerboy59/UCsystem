@@ -49,7 +49,7 @@ public class WarnClass implements CommandExecutor {
 			    	addWarn(opfer.getName(), 1);
 			    	checkWarns(opfer, Grund);
 			    } else {
-			    	sender.sendMessage("§b[§6CTS§b]§c Dieser Spieler ist nicht Online!");
+			    	sender.sendMessage("§b[§6UCS§b]§c Dieser Spieler ist nicht Online!");
 			    }
 			}
 		} else {
@@ -79,51 +79,51 @@ public class WarnClass implements CommandExecutor {
 		int warns = getWarns(opfer.getName());
 		 switch (warns) {
 	       case 1:
-	    	   opfer.sendMessage("§b[§6CTS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
+	    	   opfer.sendMessage("§b[§6UCS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
 	    	   break;
 	       case 2:
-	    	   opfer.sendMessage("§b[§6CTS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
+	    	   opfer.sendMessage("§b[§6UCS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
 	    	   opfer.kickPlayer("§6Du wurdest von §b§lCrafted §6für §c10 Minuten §6gebannt. Grund: §c" + reason);
 	    	   plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(),"tempban " + opfer.getName() + " 600");
-	    	   Bukkit.broadcastMessage("§b[§6CTS§b]§a Der Spieler§6 " + opfer.getName() + "§a wurde für 10 Minuten gebannt!");
+	    	   Bukkit.broadcastMessage("§b[§6UCS§b]§a Der Spieler§6 " + opfer.getName() + "§a wurde für 10 Minuten gebannt!");
 	    	   break;
 	       case 3:
-	    	   opfer.sendMessage("§b[§6CTS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
+	    	   opfer.sendMessage("§b[§6UCS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
 	    	   break;
 	       case 4:
-	    	   opfer.sendMessage("§b[§6CTS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
+	    	   opfer.sendMessage("§b[§6UCS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
 	    	   opfer.kickPlayer("§6Du wurdest von §b§lCrafted §6für §c1 Stunde§6 gebannt. Grund: §c" + reason);
 	    	   plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(),"tempban " + opfer.getName() + " 3600");
-	    	   Bukkit.broadcastMessage("§b[§6CTS§b]§a Der Spieler§6 " + opfer.getName() + "§a wurde für 1 Stunde gebannt!");
+	    	   Bukkit.broadcastMessage("§b[§6UCS§b]§a Der Spieler§6 " + opfer.getName() + "§a wurde für 1 Stunde gebannt!");
 
 	    	   break;
 	       case 5:
-	    	   opfer.sendMessage("§b[§6CTS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
+	    	   opfer.sendMessage("§b[§6UCS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
 	    	   break;
 	       case 6:
-	    	   opfer.sendMessage("§b[§6CTS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
+	    	   opfer.sendMessage("§b[§6UCS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
 	    	   opfer.kickPlayer("§6Du wurdest von §b§lCrafted §6für §c12 Stunden§6 gebannt. Grund: §c" + reason);
 	    	   plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(),"tempban " + opfer.getName() + " 43200");
-	    	   Bukkit.broadcastMessage("§b[§6CTS§b]§a Der Spieler§6 " + opfer.getName() + "§a wurde für 12 Stunden gebannt!");
+	    	   Bukkit.broadcastMessage("§b[§6UCS§b]§a Der Spieler§6 " + opfer.getName() + "§a wurde für 12 Stunden gebannt!");
 
 	    	   break;
 	       case 7:
 	    	   opfer.sendMessage("§b[§6CTS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
 	    	   break;
 	       case 8:
-	    	   opfer.sendMessage("§b[§6CTS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
+	    	   opfer.sendMessage("§b[§6UCS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
 	    	   opfer.kickPlayer("§6Du wurdest von §b§lCrafted §6für §c2 Tage§6 gebannt. Grund: §c" + reason);
 	    	   plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(),"tempban " + opfer.getName() + " 172800");
-	    	   Bukkit.broadcastMessage("§b[§6CTS§b]§a Der Spieler§6 " + opfer.getName() + "§a wurde für 2 Tage gebannt!");
+	    	   Bukkit.broadcastMessage("§b[§6UCS§b]§a Der Spieler§6 " + opfer.getName() + "§a wurde für 2 Tage gebannt!");
 
 	    	   break;
 	       case 9:
-	    	   opfer.sendMessage("§b[§6CTS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
-	    	   opfer.sendMessage("§b[§6CTS§b]§4§l Achtung:§c Bei deinem nächsten Warn wirst du Permanent gebannt!");
+	    	   opfer.sendMessage("§b[§6UCS§b]§a Du wurdest gewarnt, Deine Verwarnungen: §6" + warns);
+	    	   opfer.sendMessage("§b[§6UCS§b]§4§l Achtung:§c Bei deinem nächsten Warn wirst du Permanent gebannt!");
 	    	   break;
 	       case 10:
 	    	   opfer.kickPlayer("§6Du wurdest von §b§lCrafted §6Permanent gebannt. Grund: §c 10 Warns");
-	    	   Bukkit.broadcastMessage("§b[§6CTS§b]§a Der Spieler§6 " + opfer.getName() + "§a wurde Permanent gebannt!");
+	    	   Bukkit.broadcastMessage("§b[§6UCS§b]§a Der Spieler§6 " + opfer.getName() + "§a wurde Permanent gebannt!");
 
 	    	   plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(),"ban " + opfer.getName() + " 10 Warnungen");
 	    	   break;

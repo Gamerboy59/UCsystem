@@ -31,7 +31,7 @@ public class LogoutAllClass implements CommandExecutor {
 				    	  }  
 				    	  target.kickPlayer("§6Du wurdest von einem §cAdmin§6 ausgeloggt. Grund: §c" + Grund);
 				    	}
-				       Bukkit.broadcastMessage("§b[§6CTS§b] §aEs wurden alle Spieler ausgeloggt!");     
+				       Bukkit.broadcastMessage("§b[§6UCS§b] §aEs wurden alle Spieler ausgeloggt!");     
 				}
 			} else {
 				sender.sendMessage("§cDu hast keinen Zugriff auf diesen Befehl!");

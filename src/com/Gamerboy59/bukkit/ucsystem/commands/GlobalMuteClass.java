@@ -25,18 +25,18 @@ public class GlobalMuteClass implements CommandExecutor {
 						boolean st = main.mute;
 						if (st == true) {
 							main.mute = false;
-							Bukkit.broadcastMessage("Â§b[Â§6CTSÂ§b] Â§cGlobalmute wurde deaktiviert!");
+							Bukkit.broadcastMessage("§b[§6UCS§b] §cGlobalmute wurde deaktiviert!");
 						} else if (st == false) {
 							main.mute = true;
-							Bukkit.broadcastMessage("Â§b[Â§6CTSÂ§b] Â§cGlobalmute wurde aktiviert!");
+							Bukkit.broadcastMessage("§b[§6UCS§b] §cGlobalmute wurde aktiviert!");
 						}
 					} else {
 							main.mute = true;
-							Bukkit.broadcastMessage("Â§b[Â§6CTSÂ§b] Â§cGlobalmute wurde aktiviert!");
+							Bukkit.broadcastMessage("§b[§6UCS§b] §cGlobalmute wurde aktiviert!");
 					}
 				}
 			} else {
-			 sender.sendMessage("Â§cDu hast keinen Zugriff auf diesen Befehl!");
+			 sender.sendMessage("§cDu hast keinen Zugriff auf diesen Befehl!");
 			}
 		}
 		

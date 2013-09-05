@@ -36,7 +36,7 @@ public class GiveAllClass implements CommandExecutor {
 							return false;
 						}
 					}
-					Bukkit.broadcastMessage("§b[§6CTS§b] §aJeder Spieler hat §6" + anzahl + " §amal §6" + id + "§a erhalten!");
+					Bukkit.broadcastMessage("§b[§6UCS§b] §aJeder Spieler hat §6" + anzahl + " §amal §6" + id + "§a erhalten!");
 				} else if (args.length == 3) {
 					int id = Integer.parseInt(args[0]);
 					int anzahl = Integer.parseInt(args[1]);
@@ -50,7 +50,7 @@ public class GiveAllClass implements CommandExecutor {
 							return false;
 						}
 					}
-					Bukkit.broadcastMessage("§b[§6CTS§b] §aJeder Spieler hat §6" + anzahl + " §amal §6" + id + "§a erhalten!");
+					Bukkit.broadcastMessage("§b[§6UCS§b] §aJeder Spieler hat §6" + anzahl + " §amal §6" + id + "§a erhalten!");
 				}
 			} else {
 				sender.sendMessage(KeineRechte);

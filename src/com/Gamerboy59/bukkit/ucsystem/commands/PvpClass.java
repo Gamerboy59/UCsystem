@@ -21,13 +21,13 @@ public class PvpClass implements CommandExecutor {
 						for (World w : Bukkit.getWorlds()) {
 							w.setPVP(true);
 						}
-						Bukkit.broadcastMessage("§b[§6CTS§b] §aPvP wurde aktiviert!");						
+						Bukkit.broadcastMessage("§b[§6UCS§b] §aPvP wurde aktiviert!");						
 					}
 					if (args[0].equalsIgnoreCase("aus")) {
 						for (World w : Bukkit.getWorlds()) {
 							w.setPVP(false);
 						}
-						Bukkit.broadcastMessage("§b[§6CTS§b] §aPvP wurde deaktiviert!");						
+						Bukkit.broadcastMessage("§b[§6UCS§b] §aPvP wurde deaktiviert!");						
 					}
 				}
 			} else {
